@@ -91,4 +91,20 @@ button { background: #FFD54F; border: none; padding: 5px 10px; border-radius: 5p
 
 .radio-controls button:hover {
     background: #FFD54F;
+
+}
+/* This code only runs on screens smaller than 600px (phones) */
+@media (max-width: 600px) {
+    .study-container {
+        padding: 20px;
+        align-items: center; /* Centers your cards on the phone */
+    }
+
+    .timer-card, .todo-card, .radio-card {
+        width: 90%; /* Makes cards fill the width of the phone screen */
+    }
+
+    .main-title {
+        font-size: 40px; /* Shrinks the giant title so it fits */
+    }
 }
