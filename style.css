@@ -1,0 +1,94 @@
+/* Universal Styles */
+body, html { margin: 0; padding: 0; font-family: sans-serif; }
+
+/* HOME PAGE STYLES */
+.hero-bg {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('home-bg.jpg');
+    background-size: cover; height: 100vh; display: flex; justify-content: center; align-items: center; text-align: center; color: white;
+}
+.main-title { font-size: 80px; color: #FFD54F; margin: 0; }
+.enter-link { color: white; text-decoration: none; font-weight: bold; font-size: 20px; display: block; margin-top: 20px;}
+
+/* STUDY ROOM PAGE STYLES */
+.study-body {
+    background: url('cafe-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+.study-container { padding: 50px; display: flex; flex-direction: column; gap: 20px; }
+.timer-card, .todo-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 20px; border-radius: 15px; width: 300px; color: white; border: 1px solid rgba(255,255,255,0.3);
+}
+.timer-display { font-size: 3rem; text-align: center; }
+button { background: #FFD54F; border: none; padding: 5px 10px; border-radius: 5px; cursor: pointer; }
+.music-card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}/* Container for the Radio */
+.radio-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    padding: 12px 18px;
+    border-radius: 12px;
+    width: 200px; /* Narrower width */
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Radio Title ("Cafe Radio") */
+.radio-card h3 {
+    margin: 0;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+/* Song Title ("Tokyo Cafe") */
+.radio-card p {
+    margin: 2px 0;
+    font-size: 0.75rem;
+    font-weight: 300;
+}
+
+/* The Volume Slider */
+.volume-slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 3px; /* Very thin line */
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    outline: none;
+    margin: 10px 0;
+}
+
+/* The Slider "Thumb" (the circle you grab) */
+.volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: #FFD54F; /* Matches your yellow theme */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Pause/Play Button */
+.radio-controls button {
+    background: rgba(255, 213, 79, 0.8);
+    border: none;
+    padding: 4px 10px;
+    font-size: 11px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.radio-controls button:hover {
+    background: #FFD54F;
+}
